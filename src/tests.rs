@@ -30,10 +30,10 @@ fn test_option2() {
 }
 
 macro_rules! test_macro {
-        ($($input:literal)?) => {
-            option!($($input)?)
-        }
+    ($($input:literal)?) => {
+        option!($($input)?)
     }
+}
 
 #[test]
 fn test_option_with_macro_repetition1() {
@@ -48,10 +48,10 @@ fn test_option_with_macro_repetition2() {
 }
 
 macro_rules! readme {
-        ($($input1:literal)?, $($input2:literal)?, $($input3:literal)?, $($input4:literal)?, $($input5:literal)?) => {
-            (option!($($input1)?), option!($($input2)?), option!($($input3)?), option!($($input4)?), option!($($input5)?))
-        }
+    ($($input1:literal)?, $($input2:literal)?, $($input3:literal)?, $($input4:literal)?, $($input5:literal)?) => {
+        (option!($($input1)?), option!($($input2)?), option!($($input3)?), option!($($input4)?), option!($($input5)?))
     }
+}
 
 #[test]
 #[rustfmt::skip]
