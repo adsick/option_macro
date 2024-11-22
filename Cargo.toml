@@ -7,5 +7,6 @@ description = "a convenience macro"
 repository = "https://github.com/adsick/option_macro"
 license = "MIT OR Apache-2.0"
 keywords = ["option", "macro", "helper", "macro_rules"]
+exclude = ["tests.rs"]
 
 [dependencies]
